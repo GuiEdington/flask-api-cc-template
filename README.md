@@ -21,5 +21,12 @@ Simply run:
 
 ```bash
 cd MY_API_FOLDER
-bash build.sh
+bash start.sh
+```
+Now, open it in your browser http://localhost:8080/
+
+To stop the API, just run:
+
+```bash
+bash stop.sh
 ```
