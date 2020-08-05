@@ -32,8 +32,11 @@ class Application:
                     template = template.replace("!!CORPO!!","Esse é um email de teste!")
                     self.notify(template,request.form['email'],"{{cookiecutter.api_name}} | EMAIL TESTE")
                 except Exception as e:
-                    errorcode, errortext = e.args
-                    return render_template('error.html', error = 'Error {}: {}'.format(errorcode,errortext.decode("utf-8")))
+                    if len(e.args) == 2:
+                        errorcode, errortext = e.args
+                        return render_template('error.html', error = 'Error {}: {}'.format(errorcode,errortext.decode("utf-8")))
+                    else:
+                        return render_template('error.html', error = 'Error {}'.format(e))
                 return render_template('success.html')
             else:
                 return render_template('mail.html')
