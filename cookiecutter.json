@@ -1,3 +1,5 @@
 {
-    "api_name": "defaultAPI"
+    "api_name": "defaultAPI",
+    "email_address": "example@gmail.com",
+    "email_password": "do not use password in files :D"
 }
