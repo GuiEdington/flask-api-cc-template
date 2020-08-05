@@ -1,7 +1,7 @@
 {
     "gmail": {
-        "user": "",
-        "pass": "",
+        "user": "{{cookiecutter.email_address}}",
+        "pass": "{{cookiecutter.email_password}}",
         "server": "smtp.gmail.com",
         "port": 587
     }
