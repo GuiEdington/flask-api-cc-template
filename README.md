@@ -17,7 +17,9 @@ And your new API is ready to go!
 
 ## How to run
 
-Simply run:
+You'll need to have Docker installed in your machine: https://docs.docker.com/get-docker/
+
+Then ,simply run:
 
 ```bash
 cd MY_API_FOLDER
