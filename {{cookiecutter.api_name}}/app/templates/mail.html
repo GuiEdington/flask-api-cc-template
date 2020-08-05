@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel="stylesheet" href="../static/css/main.css">
+        <title>{{cookiecutter.api_name}} - Index</title>
+    </head>
+    <body>
+        <div class="title">
+            {{cookiecutter.api_name}}
+        </div>
+        <p>Digite o seu endereço de email:</p>
+        <form method="POST" action="/{{cookiecutter.api_name}}/mail">
+            <input type="email" name="email"><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+        <p>Voltar para <a href="../{{cookiecutter.api_name}}/home">home</a></p>
+        <div class="footer">
+            Developed by GuiEdington | 2020
+        </div>
+    </body>
+</html>

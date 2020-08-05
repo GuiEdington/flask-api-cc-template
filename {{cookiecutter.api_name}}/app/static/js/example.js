@@ -1,0 +1,1 @@
+//Aqui ficam as funções JS
