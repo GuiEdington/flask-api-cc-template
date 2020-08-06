@@ -67,7 +67,7 @@ input[type=submit] {
     background-color: #262626;
     color: #9de13c;
     font-family: 'Courier New', Courier, monospace;
-    border: 2px 2px 2px 2px solid #565656;
+    border: 2px solid #565656;
     border-radius: .2em;
     margin: auto;
     padding: .5em;
