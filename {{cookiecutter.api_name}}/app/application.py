@@ -34,7 +34,8 @@ class Application:
                 except Exception as e:
                     if len(e.args) == 2:
                         errorcode, errortext = e.args
-                        return render_template('error.html', error = 'Error {}: {}'.format(errorcode,errortext.decode("utf-8")))
+                        if not isinstance(errortext, str): errortext = errortext.decode("utf-8") 
+                        return render_template('error.html', error = 'Error {}: {}'.format(errorcode,errortext))
                     else:
                         return render_template('error.html', error = 'Error {}'.format(e))
                 return render_template('success.html')
